@@ -235,6 +235,7 @@ span.navbar-text {
 }
 .navbar-text button:hover {
   color: #121212;
+  background-color: #fff;
 }
 .navbar-text button:hover::before {
 	content: "";
@@ -554,4 +555,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #B8B8B8;
   letter-spacing: 0.5px;
   margin-top: 20px;
+}
+.signINbanner {
+  margin-top: 0;
+  padding: 260px 0px 100px 0px;
+  text-align: center;
+  background-image: url('./assets/img/banner-bg-2.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.signInbanner-text{
+ padding-bottom: 50px;
+  font-family: 'Poppins', sans-serif !important;
+  font-size: 65px;
+  font-weight: 700;
+
 }
