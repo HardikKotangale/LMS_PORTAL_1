@@ -10,7 +10,8 @@ import Student from './components/signInPage/Student';
 import AboutUs from './components/AboutUs';
 import JobPortal from './components/JobPortal';
 import Services from './components/Services';
-//import SignIn from './components/SignIn';
+import LoginModal from './components/LoginModal';
+import RegisterModal from './components/RegisterModal';
 
 function App() {
   return (
@@ -19,11 +20,13 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
-        <Route path="/logIn" element={<LogIn />} />
+        <Route path="/lmsPortal" element={<LogIn />} />
+        <Route path="/logIn" element={<LoginModal />}/>
         <Route path="/jobportal" element={<JobPortal/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/admin" element={<Admin />} />
         <Route path="/student" element={<Student />} />
+        <Route path="/register" element={<RegisterModal />} />
         <Route path="/*" element={<Page404 />} />
       </Routes>
     </BrowserRouter>

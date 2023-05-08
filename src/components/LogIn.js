@@ -1,7 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Container } from "react-bootstrap";
 import { useNavigate } from 'react-router-dom';
-import logo from 'C:/Users/salon/Downloads/LMS_PORTAL_1/LMS_PORTAL_1/src/assets/img/Oytie.png';
+import logo from './assets/img/Oytie.png';
 
 
 export default function LogIn() {
@@ -26,8 +26,8 @@ export default function LogIn() {
           <Container className=" signInbanner-text">
             <p className="fs-1" >SIGN IN AS</p>
             <span className="d-flex justify-content-center navbar-text">
-              <button onClick={() => navigate("/admin")} className="fs-5  vvd"><span>Admin</span></button>
-              <button onClick={() => navigate("/student")} className="fs-5  vvd"><span>Student</span></button>
+              <button onClick={() => navigate("/logIn")} className="fs-5  vvd"><span>Admin</span></button>
+              <button onClick={() => navigate("/logIn")} className="fs-5  vvd"><span>Student</span></button>
             </span>
           </Container>
         </section>

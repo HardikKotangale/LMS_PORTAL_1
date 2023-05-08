@@ -9,7 +9,7 @@ import {
     MDBInput,
     MDBIcon
 }
-    from 'mdb-react-ui-kit';
+from 'mdb-react-ui-kit';
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
@@ -19,7 +19,7 @@ const auth = getAuth(app);
 
 const RegisterModal = () => {
     const navigate = useNavigate();
-    const initialValues = { firstName: "", lastName: "", email: "", password: "" };
+    const initialValues = { firstName: "", lastName: "", email: "test@gmail.com", password: "" };
     const [formValues, setFormValues] = useState(initialValues);
     const [formErrors, setFormErrors] = useState({});
     const [isSubmit, setIsSubmit] = useState(false);
@@ -30,10 +30,10 @@ const RegisterModal = () => {
     };
 
     const addData = (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         setFormErrors(validate(formValues));
         setIsSubmit(true);
-        createUserWithEmailAndPassword(auth, initialValues.email, initialValues.password).then(value => alert(value));
+        createUserWithEmailAndPassword(auth, formValues.email, formValues.password).then(value => alert(value));
     }
 
     useEffect(() => {
@@ -49,10 +49,10 @@ const RegisterModal = () => {
             /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/
         );
         if (!values.firstName) {
-            errors.username = "First name is required!";
+            errors.firstName = "First name is required!";
         }
         if (!values.lastName) {
-            errors.username = "Last name is required!";
+            errors.lastName = "Last name is required!";
         }
         if (!values.email) {
             errors.email = "Email is required!";

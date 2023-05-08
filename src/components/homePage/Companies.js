@@ -1,12 +1,12 @@
-import cp1 from ".../assets/img/Coditas.png";
-import cp2 from ".../assets/img/MaxSecure.png";
-import cp3 from ".../assets/img/quickenSol.png";
-import cp4 from ".../assets/img/RajaSoftwareLabs.png";
-import cp5 from ".../assets/img/zencon.png";
-import cp6 from ".../assets/img/zensoft.png";
+import cp1 from "../assets/img/Coditas.png";
+import cp2 from "../assets/img/MaxSecure.png";
+import cp3 from "../assets/img/quickenSol.png";
+import cp4 from "../assets/img/RajaSoftwareLabs.png";
+import cp5 from "../assets/img/zencon.png";
+import cp6 from "../assets/img/zensoft.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import colorSharp from ".../assets/img/color-sharp5.png"
+import colorSharp from "../assets/img/color-sharp5.png"
 
 export const Companies = () => {
   const responsive = {
